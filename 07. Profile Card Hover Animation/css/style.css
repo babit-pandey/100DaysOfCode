@@ -1,0 +1,73 @@
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 16px;
+	margin:0;
+	background: #029880;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 100vh;
+}
+img{
+	max-width: 100%;
+}
+
+.pro-card{
+	width: 400px;
+	padding: 30px;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size:100% auto;
+	background-color: #000;
+	background-blend-mode: hard-light;  
+	transition: all 0.4s ease-out;
+	position: relative;
+	overflow: hidden;
+}
+.pro-card img{
+	border-radius: 50%;
+	display: block;
+	transition: all 0.4s ease-out;
+	transform-origin: top;
+	position: relative;
+	z-index: 1;
+}
+.pro-card:hover{
+	background-position: 0 -50%
+}
+.pro-card:hover img{
+	transform: scale(0.5);
+}
+.pro-card .description{
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+}
+.pro-card .description h3{
+	text-transform: uppercase;
+	font-size: 28px;
+	text-align: center;
+	transition: all 0.4s ease-out;
+	transform: translateX(-150%);
+}
+.pro-card .description p{
+	margin-bottom: 0px;
+	transition: all 0.4s ease-out;
+	transform: translateX(150%);
+}
+.pro-card:hover .description h3{
+	transform: translateX(0%);
+}
+.pro-card:hover .description p{
+	transform: translateX(0%);
+}
