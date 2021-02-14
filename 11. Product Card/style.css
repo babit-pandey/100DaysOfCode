@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 270px;
+    height: 365px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    font-family: Verdana;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img-wrapper{
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .6s;
+}
+
+.img-wrapper img{
+    width: 75%
+}
+
+.card:hover .img-wrapper{
+    transform-origin: top;
+    transform: scale(0.6) translateY(20px);
+}
+
+.content-wrapper{
+    transition: all .6s;
+}
+
+.card:hover .content-wrapper{
+    transform: translateY(-100px);
+}
+
+.inner-content-wrapper{
+    transition: all .6s;
+}
+
+.card:hover .inner-content-wrapper{
+    transform: translateY(-40px);
+}
+
+.title{
+    margin: 15px 0 20px 0;
+}
+
+.card:hover .title{
+    color: #fe6c2d;
+}
+
+.price{
+    margin-bottom: 20px;
+    color: #fe6c2d;
+    letter-spacing: 1px;
+
+    transition: all .4s;
+}
+
+.card:hover .price{
+    opacity: 0;
+}
+
+
+
+
+.icons{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0,0,0,0.05);
+
+    opacity: 0;
+    transition: all .4s;
+}
+
+.card:hover .icons{
+    opacity: 1;
+}
+
+.icon{
+    font-size: 22px;
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+.icon:hover{
+    color: #fe6c2d;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.price-corner::before{
+    content: '$ 399';
+    background: #0ac9f5;
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    align-items: center;
+    position: absolute;
+    letter-spacing: 1px;
+    transform-origin: top;
+    padding-top: 20px;
+    right: -115px;
+    height: 40px;
+    top: -50px;
+    transform: rotate(45deg);
+    z-index: 1;
+
+    transition: all .5s;
+}
+
+.card:hover .price-corner::before{
+    padding-top: 96px;
+}
