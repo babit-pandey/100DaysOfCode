@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+}
+
+.page-wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  flex: 1 1 66.666%;
+  background-image: linear-gradient(to bottom right, #cc2e5d, #ff5858);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-panel .illustration {
+  margin-bottom: 50px;
+}
+
+.left-panel h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 1 1 33.333%;
+  padding: 25px;
+}
+
+.right-panel h1 {
+  color: #ff5858;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.right-panel h1 strong {
+  color: #cc2e5d;
+  font-weight: 900;
+}
+
+.animated-form h3 {
+  color: #666;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+
+.animated-form .form-group {
+  position: relative;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.form-group.flex-end {
+  justify-content: flex-end;
+}
+
+.animated-form .form-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
+  transition: 0.2s ease-out;
+}
+
+.animated-form .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+
+  color: #666;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.animated-form .form-group:focus-within label,
+.animated-form .form-group.has-content label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #ff5858;
+}
+
+.animated-form .form-group:focus-within input,
+.animated-form .form-group.has-content input {
+  border-bottom-color: #ff5858;
+}
+.animated-form .form-group.flex-end {
+  margin-bottom: 25px;
+}
+.animated-form .form-group .button {
+  display: inline-block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid #ff5858;
+  border-radius: 999px;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    #cc2e5d 50%,
+    #ff5858
+  );
+  background-size: 200%;
+
+  color: #ff5858;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.animated-form .form-group .button:hover {
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
+}
+
+.animated-form .lost-password a {
+  color: #ff5858;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+.animated-form .lost-password a:hover {
+  border-bottom-color: #ff5858;
+}
