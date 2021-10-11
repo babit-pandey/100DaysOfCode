@@ -14,7 +14,6 @@ body {
 }
 
 .left-panel {
-  flex: 1 1 66.666%;
   background-image: linear-gradient(to bottom right, #cc2e5d, #ff5858);
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@ body {
 }
 
 .right-panel {
-  flex: 1 1 33.333%;
   padding: 25px;
 }
 
@@ -141,4 +139,11 @@ body {
 }
 .animated-form .lost-password a:hover {
   border-bottom-color: #ff5858;
+}
+
+@media screen and (max-width: 900px) {
+  .page-wrap {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
 }
