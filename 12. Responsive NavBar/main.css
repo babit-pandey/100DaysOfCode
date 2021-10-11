@@ -21,19 +21,19 @@ header .container {
   justify-content: space-between;
 }
 header .container .brand h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
   font-weight: 900;
 }
 header .container .brand h2 span {
-  color: #FF5858;
+  color: #ff5858;
   font-weight: 400;
 }
 header .container .mobile-nav {
   display: none;
 }
 header .container .mobile-nav .open-menu {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 @media screen and (max-width: 767px) {
@@ -50,12 +50,12 @@ header .container .navbar .menu .menu-item {
 }
 header .container .navbar .menu .menu-item a {
   display: block;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   padding: 10px 25px;
 }
 header .container .navbar .menu .menu-item a:hover {
-  color: #FF5858;
+  color: #ff5858;
   background-color: #323232;
 }
 header .container .navbar .menu .menu-item.has-sub-menu > a {
@@ -69,12 +69,12 @@ header .container .navbar .menu .menu-item.has-sub-menu > a:after {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
 }
 header .container .navbar .menu .menu-item.has-sub-menu > a:hover:after {
-  color: #FF5858;
+  color: #ff5858;
 }
 header .container .navbar .menu .menu-item.has-sub-menu .sub-menu {
   position: absolute;
@@ -96,13 +96,19 @@ header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu {
   transform: translateY(0);
   pointer-events: all;
 }
-header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu .sub-menu {
+header
+  .container
+  .navbar
+  .menu
+  .menu-item.has-sub-menu:hover
+  > .sub-menu
+  .sub-menu {
   top: 0;
   right: 100%;
 }
 header .container .navbar .close-menu {
   display: none;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   text-align: center;
 }

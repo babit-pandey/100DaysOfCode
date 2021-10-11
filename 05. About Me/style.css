@@ -1,0 +1,120 @@
+body{
+    background: #282828;
+    font-family: tahoma;
+    text-align: justify;
+}
+
+#about{
+    padding-top: 20px;
+}
+
+#about .triangle-right{
+    margin-top: 95px;
+    width: 0;
+    height: 0;
+    border-top: 259px solid transparent;
+    border-left: 470px solid #d6c6b2;
+    border-bottom: 259px solid transparent;
+}
+
+#about .triangle-right img{
+    position: absolute;
+    left: -1px;
+    top: 81px;
+    width: 74%;
+
+}
+
+.fa-play{
+    font-size: 100px;
+}
+
+
+#about .p-first{
+    margin-bottom: 30px;
+}
+
+
+#about h2{
+    margin-bottom: 47px;
+    margin-top: 12px;
+
+}
+
+
+#about .social-link-text{
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+
+#about .about-link{
+    padding-left: 0px;
+}
+
+#about .about-link li{
+    display: inline-block;
+}
+
+#about .about-link li a i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #d6c6b2;
+    margin-right: 10px;
+    font-size: 22px;
+    color: #d6c6b2;
+    transition: all .3s;
+
+}
+
+
+#about .about-link li a i:hover{
+    color: #222222;
+    background: #d6c6b2;
+    border-color: #d6c6b2;
+
+}
+
+
+#about .about-img{
+    position: relative;
+
+}
+
+#about .about-img{
+    position: relative;
+
+}
+
+#about .about-img .man{
+    position: absolute;
+    bottom: 161px;
+    top: 12px;
+    left: -2px;
+
+}
+
+.color-3{
+    color: #d6c6b2;
+}
+
+
+.text-white{
+    color: white;
+}
+
+
+p{
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #d6c6b2;b
+}
+
+.btn-danger{
+    border-radius: 0;
+    padding: 10px 20px;
+}

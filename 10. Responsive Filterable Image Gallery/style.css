@@ -89,6 +89,7 @@ body {
   transform: translate(-50%, -50%) scale(0.9);
   background: #fff;
   max-width: 700px;
+
   width: 100%;
   z-index: 5;
   opacity: 0;
@@ -125,6 +126,8 @@ body {
 }
 .preview-box .image-box {
   width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
   display: flex;
 }
 .image-box img {
