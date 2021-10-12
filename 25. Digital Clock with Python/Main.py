@@ -17,10 +17,10 @@ def light_theme():
 
 
 def dark_theme():
-    frame = tk.Frame(root, bg="#22478a")
+    frame = tk.Frame(root, bg="black")
     frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
     lbl_2 = tk.Label(frame, font=('calibri', 40, 'bold'),
-                     background='#22478a', foreground='black')
+                     background='black', foreground='white')
     lbl_2.pack(anchor="s")
 
     def time():
@@ -35,10 +35,10 @@ root.title("Digital-Clock")
 canvas = tk.Canvas(root, height=140, width=400)
 canvas.pack()
 
-frame = tk.Frame(root, bg='#22478a')
+frame = tk.Frame(root, bg='black')
 frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
 lbl = tk.Label(frame, font=('calibri', 40, 'bold'),
-                     background='#22478a', foreground='black')
+                     background='black', foreground='white')
 lbl.pack(anchor="s")
 
 def time():
